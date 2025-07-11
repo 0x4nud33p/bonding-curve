@@ -2,8 +2,10 @@ import "./globals.css";
 import type React from "react";
 import type { Metadata } from "next";
 import { Inter, Orbitron } from "next/font/google";
-import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
-import { AppSidebar } from "@/components/app-sidebar"
+import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
+import { AppSidebar } from "@/components/app-sidebar";
+import { SolanaProvider } from "@/components/providers/wallet-provider";
+
 
 const inter = Inter({
   subsets: ["latin"],
@@ -30,6 +32,7 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${orbitron.variable} font-sans bg-black text-white min-h-screen`}
       >
+        <SolanaProvider>
         <SidebarProvider>
         <AppSidebar />
         <main>
@@ -37,6 +40,7 @@ export default function RootLayout({
           {children}
         </main>
       </SidebarProvider>
+      </SolanaProvider>
       </body>
     </html>
   );
