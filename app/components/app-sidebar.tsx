@@ -1,4 +1,6 @@
-import { User2, Home, Inbox, Search, Settings } from "lucide-react"
+"use client";
+
+import { User2, Home, Inbox, Search, Settings, Wallet } from "lucide-react"
 import {
   Sidebar,
   SidebarContent,
@@ -62,12 +64,7 @@ export function AppSidebar() {
                   </SidebarMenuButton>
                 </SidebarMenuItem>
               ))}
-            </SidebarMenu>
-          </SidebarGroupContent>
-        </SidebarGroup>
-      </SidebarContent>
-      <SidebarFooter> 
-        {connected ? (
+              {connected ? (
           <WalletButton className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-semibold px-6 py-2 shadow-lg transition-all duration-200 hover:scale-105 hover:shadow-xl" />
         ) : (
           <WalletButton className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-semibold px-6 py-2 shadow-lg transition-all duration-200 hover:scale-105 hover:shadow-xl">
@@ -75,6 +72,12 @@ export function AppSidebar() {
             Connect Wallet
           </WalletButton>
         )}
+            </SidebarMenu>
+          </SidebarGroupContent>
+        </SidebarGroup>
+      </SidebarContent>
+      <SidebarFooter> 
+        
       </SidebarFooter>
     </Sidebar>
   )

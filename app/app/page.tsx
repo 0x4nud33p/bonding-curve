@@ -10,7 +10,7 @@ export default function Home() {
     <div className="flex h-[100dvh] w-full">
 
       {/* Main Content */}
-      <main className="flex-grow relative px-6 py-6 overflow-y-auto">
+      <main className="flex-grow relative px-6 py-6 overflow-y-auto w-full">
         <div className="space-y-6">
           <Card>
             <CardHeader>
