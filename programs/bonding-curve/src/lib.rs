@@ -3,7 +3,7 @@ use anchor_lang::prelude::*;
 declare_id!("CUhDYmTTBNJeP7vCHGc8uTMc6gn9tbUcQHSyw49GXCDr");
 
 #[program]
-pub mod dtwitter {
+pub mod bonding-curve {
     use super::*;
 
     pub fn initialize(ctx: Context<Initialize>) -> Result<()> {
