@@ -6,7 +6,7 @@ resolution = true
 skip-lint = false
 
 [programs.localnet]
-dtwitter = "CUhDYmTTBNJeP7vCHGc8uTMc6gn9tbUcQHSyw49GXCDr"
+bondingcurve = "CUhDYmTTBNJeP7vCHGc8uTMc6gn9tbUcQHSyw49GXCDr"
 
 [registry]
 url = "https://api.apr.dev"
